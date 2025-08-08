@@ -1,9 +1,5 @@
 var randomNumber1 = Math.floor(Math.random()*6 )+1;
-
-var randomDiceImage = "dice"+ randomNumber1 + ".png";
-
-var randonImageSource = "dice" + randomDiceImage;
-
+var randonImageSource = "dice" +randomNumber1 + ".png";
 var image1 = document.querySelectorAll("img")[0];
 
 image1.setAttribute("src", randonImageSource);
@@ -24,5 +20,6 @@ else if(randomNumber2>randomNumber1){
 else {
     document.querySelector("h1").innerHTML = "It Is a DRAW!";
 }
+
 
 
